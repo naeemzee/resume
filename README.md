@@ -1,2 +1,2 @@
-# Resume Porjects
-Projects that I am showcasing for my resume.
+# Resume Pojects
+Projects that I am showcasing on my resume.

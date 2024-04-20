@@ -1,9 +1,0 @@
-{% extends 'shared/layout.html' %}
-
-{% block maincontent %}
-<!-- Main content area -->
-{% for comment in stored_feed %}
-    <!-- Display each comment -->
-    <p>{{comment['name']}} said: {{comment['comment']}}</p>
-{% endfor %}
-{% endblock %}

@@ -1,0 +1,14 @@
+{% extends 'shared/layout.html' %}
+
+{% block maincontent %}
+<!-- Main content area -->
+{% if stored_feed %}
+    {% for comment in stored_feed %}
+        <!-- Display each comment -->
+        <p>{{comment['name']}} said: {{comment['comment']}}</p>
+    {% endfor %}
+{% else %}
+    <!-- Display "No feedback" if there are no comments -->
+    <p>No Feedback</p>
+{% endif %}
+{% endblock %}

@@ -1,2 +1,3 @@
 # Resume Pojects
-Projects that I am showcasing on my resume.
+
+Hello! Here are some projects/project files that I am willing to showcase.

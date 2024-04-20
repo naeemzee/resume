@@ -1,0 +1,40 @@
+{% extends 'shared/layout.html' %}
+
+{% block maincontent %}
+<!-- Main content area -->
+<div class="mainAreaContainer">
+    <!-- Profile picture -->
+    <div class="myPic">
+        <img src="static/main/images/me.jpg" alt="A profile picture of Zeeshan Naeem" loading="lazy">
+    </div>
+    <!-- Description section -->
+    <div class="description">
+        <p>
+            <!-- Introduction -->
+            I'm <span class="myName">Zeeshan Naeem</span>, a junior at Michigan State University majoring in
+            Computer Science and minoring in Business. I love to program,
+            and I enjoy problem solving and testing my skills too, which are skills I hope to use/test in my
+            career as a software engineer.
+            <br><br>
+            <!-- Career aspirations -->
+            While I currently do not have internship or job experience in my current field, I am currently
+            pursuing, and am open to,
+            internship and/or job offers in my field so that I can join the workforce and get some experience. I
+            cannot wait to develop solutions to important complex problems that have positive impacts on the
+            world!
+        </p>
+    </div>
+    <!-- Fun fact section -->
+    <div class="break">
+        <hr>
+        <div class="myFunFact">
+            <p>
+                <!-- Displaying a fun fact -->
+                A fun fact about me:
+                <br><br>
+                {{fun_fact}}
+            </p>
+        </div>
+    </div>
+</div>
+{% endblock %}

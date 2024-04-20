@@ -1,0 +1,27 @@
+{% extends 'shared/layout.html' %}
+
+{% block extrajs %}
+<!-- Include jQuery library -->
+<script type="text/javascript" src="//code.jquery.com/jquery-1.4.2.min.js"></script>
+<!-- Include Socket.IO library -->
+<script src="https://cdn.socket.io/3.1.1/socket.io.min.js"></script>
+{% endblock %}
+
+{% block maincontent %}
+<!-- Title of the chat -->
+<p>Chat</p>
+
+<!-- Container for displaying chat messages -->
+<div id='chat' contenteditable>    
+</div>
+
+<!-- Form for sending messages -->
+<form action="" method="post">
+    <input type="text" name="message" placeholder="Enter Your Message Here" />
+    <button type="submit">Send</button>
+</form>
+
+<!-- Button to leave the chat -->
+<button id="leave">Leave Chat</button>
+{% endblock %}
+

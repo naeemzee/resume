@@ -1,0 +1,23 @@
+/* Styling for the chat container */
+#chat {
+    width: 100%;
+    /* Full width */
+    height: 350px;
+    /* Fixed height */
+    padding: 12px 20px;
+    /* Padding inside the container */
+    box-sizing: border-box;
+    /* Box-sizing to include padding and border in the width and height */
+    border: 2px solid #ccc;
+    /* Border with color #ccc */
+    border-radius: 4px;
+    /* Rounded corners */
+    background-color: #f8f8f8;
+    /* Background color */
+    font-size: 16px;
+    /* Font size */
+    resize: none;
+    /* Disable resizing */
+    overflow-y: auto;
+    /* Enable vertical scrolling */
+}

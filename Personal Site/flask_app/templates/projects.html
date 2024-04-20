@@ -1,0 +1,47 @@
+{% extends 'shared/layout.html' %}
+
+{% block maincontent %}
+<!-- Small main area container -->
+<div class="smallMainAreaContainer">
+    <div class="myProjectDescrip">
+        <p>
+            <!-- Project description -->
+            Below is a list or projects I worked on in CSE 477:
+            <br><br>
+            Click an image or hyperlink in the description to learn more.
+        </p>
+        <hr> <!-- Horizontal line -->
+    </div>
+</div>
+
+<!-- Main area container -->
+<div class="mainAreaContainer">
+    <!-- Project image and description -->
+    <div class="myPic">
+        <!-- Link to the project page -->
+        <a href="/piano">
+            <!-- Image of the project -->
+            <img src="static/main/images/piano.jpeg" alt="A picture of a piano" loading="lazy">
+        </a>
+    </div>
+    <div class="description">
+        <p>
+            <!-- Project details -->
+            <span class="pianoName">Javascript Piano</span>
+            <br>
+            As part of my first Homework assignment in CSE477, I developed an interactive piano built
+            in pure HTML, CSS, and JavaScript. This tool (in addition to my webpage) highlights my ability
+            to build beautiful and mobile-friendly front-end applications.
+            <!-- Link to play the piano -->
+            <a class="play" href="/piano">Click here to see and play!</a>
+        </p>
+    </div>
+    <div class="break">
+        <hr> <!-- Horizontal line -->
+        <!-- Additional information -->
+        <div class="extraInfo">
+            <p>More coming soon!</p>
+        </div>
+    </div>
+</div>
+{% endblock %}

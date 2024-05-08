@@ -1,0 +1,78 @@
+{% extends 'shared/layout.html' %}
+
+{% set show_chat = True %}
+
+{% block extrajs %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- Include Socket.IO library -->
+<script src="https://cdn.socket.io/3.1.1/socket.io.min.js"></script>
+<script>
+const boardId = "{{ board_id }}";
+const allCards = {{ all_cards | safe }};
+const boardCards = {{ board_cards | safe }};
+
+</script>
+{% endblock %}
+
+{% block maincontent %}
+<div id="board">
+    <h1>{{ board_name }}</h1>
+    <div id="lists">
+        <div class="list" id="toDo">
+            <h2>To Do</h2>
+            <div class="cards" draggable="true">
+                <!-- Cards for To Do list go here -->
+            </div>
+            <button>Add Card</button>
+        </div>
+        <div class="list" id="doing">
+            <h2>Doing</h2>
+            <div class="cards" draggable="true">
+                <!-- Cards for Doing list go here -->
+            </div>
+            <button>Add Card</button>
+        </div>
+        <div class="list" id="completed">
+            <h2>Completed</h2>
+            <div class="cards" draggable="true">
+                <!-- Cards for Completed list go here -->
+            </div>
+            <button>Add Card</button>
+        </div>
+    </div>
+</div>
+
+<!-- Chat container -->
+<div id="chat-container">
+    <!-- Title of the chat -->
+    <p>Board Chat</p>
+
+    <!-- Container for displaying chat messages -->
+    <div id='chat' contenteditable>    
+    </div>
+
+    <!-- Form for sending messages -->
+    <form action="" method="post">
+        <input type="text" name="message" placeholder="Enter Your Message Here" />
+        <button type="submit">Send</button>
+    </form>
+
+    <!-- Button to leave the chat -->
+    <button id="leave">Leave Chat and Board</button>
+</div>
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

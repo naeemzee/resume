@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Trello Copy</title>
+    <!-- JavaScript File -->
+    <script src="{{ url_for('static', filename='main/login/login.js') }}" defer></script>
+    <!-- Include jQuery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+
+<body>
+    <article>
+        <main>
+            <!-- Login form -->
+            <p>Login</p>
+            <form id="loginForm">
+                <!-- Input fields for email and password -->
+                <input type="email" id="username" name="username" placeholder="Email"><br>
+                <input type="password" id="password" name="password" placeholder="Password"><br>
+                <!-- Button to trigger login function -->
+                <button type="button" onclick="checkCredentials()">Login</button>
+            </form>
+            <br>
+            <!-- Sign Up form -->
+            <p>Sign Up</p>
+            <form id="signup">
+                <!-- Input fields for email and password -->
+                <input type="email" id="newusername" name="newusername" placeholder="Email"><br>
+                <input type="password" id="newpassword" name="newpassword" placeholder="Password"><br>
+                <!-- Button to trigger login function -->
+                <button type="button" onclick="checkSignUp()">Sign Up</button>
+            </form>
+        </main>
+    </article>
+</body>
+
+
+
+
+
+
+
